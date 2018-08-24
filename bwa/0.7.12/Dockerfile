@@ -8,7 +8,7 @@ FROM ubuntu:12.04
 
 # File Author / Maintainer
 MAINTAINER Kathrin Klee
-cp bwa-0.7.12.tar.bz2 /tmp/bwa-0.7.12.tar.bz2
+COPY bwa-0.7.12.tar.bz2 /tmp/bwa-0.7.12.tar.bz2
 # Update the repository sources list
 RUN apt-get update
 
