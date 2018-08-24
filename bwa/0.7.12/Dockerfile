@@ -8,7 +8,7 @@ FROM ubuntu:12.04
 
 # File Author / Maintainer
 MAINTAINER Kathrin Klee
-
+cp bwa-0.7.12.tar.bz2 /tmp/bwa-0.7.12.tar.bz2
 # Update the repository sources list
 RUN apt-get update
 
@@ -18,7 +18,7 @@ RUN apt-get install --yes build-essential gcc-multilib apt-utils zlib1g-dev wget
 # Get source code
 WORKDIR /tmp
 
-RUN wget -q http://downloads.sourceforge.net/project/bio-bwa/bwa-0.7.12.tar.bz2
+#RUN wget -q http://downloads.sourceforge.net/project/bio-bwa/bwa-0.7.12.tar.bz2
 
 RUN tar xjf bwa-0.7.12.tar.bz2
 
