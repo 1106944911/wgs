@@ -13,7 +13,7 @@ MAINTAINER Kathrin Klee
 RUN apt-get update
 
 # Install compiler and perl stuff
-RUN apt-get install --yes build-essential gcc-multilib apt-utils zlib1g-dev wget LZ5
+RUN apt-get install --yes build-essential gcc-multilib apt-utils zlib1g-dev 
 
 # Get source code
 WORKDIR /tmp
