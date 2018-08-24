@@ -13,7 +13,7 @@ COPY bwa-0.7.12.tar.bz2 /tmp/bwa-0.7.12.tar.bz2
 RUN apt-get update
 
 # Install compiler and perl stuff
-RUN apt-get install --yes build-essential gcc-multilib apt-utils zlib1g-dev wget p7zip-full p7zip-rar
+RUN apt-get install --yes build-essential gcc-multilib apt-utils zlib1g-dev wget p7zip-full
 
 # Get source code
 WORKDIR /tmp
